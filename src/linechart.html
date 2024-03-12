@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Stockholm Air Pollution LineChart</title>
+    <style>
+      .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 2;
+      }
+      .tooltip {
+        background: #eee;
+        box-shadow: 0 0 5px #999999;
+        color: #333;
+        display: none;
+        font-size: 12px;
+        left: 130px;
+        padding: 10px;
+        position: absolute;
+        text-align: center;
+        top: 95px;
+        width: 80px;
+        z-index: 10;
+      }
+      .legend {
+        font-size: 14px;
+      }
+      rect {
+        stroke-width: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Stockholm Air pollution</h1>
+    <h4 id="description">AQI value from 2017 to 2023</h4>
+    <div id="chart"></div>
+    <script src="chart.js"></script>
+  </body>
+</html>
